@@ -21,9 +21,9 @@ public class Cliente {
     public Cliente(String nome, int quatidade, Produto produto) {
         this(nome, new Item(quatidade, produto));
     }
-    public Cliente(String nomeCliente, int quatidade, String nome, float preco)
+    public Cliente(String nome, int quatidade, String nomeProduto, Double preco)
     {
-        this(nomeCliente, new Item(quatidade, nome, preco));
+        this(nome, new Item(quatidade, nomeProduto, preco));
     }
 
     public String toString() {

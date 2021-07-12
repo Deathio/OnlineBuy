@@ -5,17 +5,17 @@ import java.util.List;
 
 public class Produto {
     
-    private float preco;
+    private Double preco;
     public String nome;
     public final List<Item> itens = new ArrayList<>();
 
-    Produto(String nome, float preco, Item item) {
+    Produto(String nome, Double preco2, Item item) {
         this.nome = nome;
-        this.preco = preco;
+        this.preco = preco2;
         itens.add(item);
     }
 
-    public float getPreco() {
+    public Double getPreco() {
         return preco;
     }
 }

@@ -9,7 +9,7 @@ public class Item {
         this.quatidade = quatidade;
         this.produto = produto;
     }
-    public Item(int quatidade, String nome, float preco) {
+    public Item(int quatidade, String nome, Double preco) {
         this.quatidade = quatidade;
         this.produto = new Produto(nome, preco, this);
     }

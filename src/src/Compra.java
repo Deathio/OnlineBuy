@@ -7,7 +7,7 @@ import java.util.List;
 public class Compra {
 
     public final List<Item> listItens = new ArrayList<>();
-    private float valorTotal = 0;
+    private Double valorTotal = 0.0;
 
     public Compra(Item item) {
         AdicionarItem(item);
@@ -16,7 +16,7 @@ public class Compra {
     public Compra(int quatidade, Produto produto) {
         this(new Item(quatidade, produto));
     }
-    public Compra(int quatidade, String nome, float preco)
+    public Compra(int quatidade, String nome, Double preco)
     {
         this(new Item(quatidade, nome, preco));
     }
@@ -32,7 +32,7 @@ public class Compra {
     public void AdicionarItem(Item item) {
         listItens.add(item);
     }
-    public float GetValorTotal() {
+    public Double GetValorTotal() {
         return valorTotal;
     }
 }
