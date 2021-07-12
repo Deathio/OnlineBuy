@@ -20,7 +20,7 @@ public class Compra {
     {
         this(new Item(quatidade, nome, preco));
     }
-
+    
     public String toString() {
         String lista = "quant.\tnome\t\t\t\tunid.\ttotal";
         
