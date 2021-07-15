@@ -13,4 +13,8 @@ public class Item {
         this.quatidade = quatidade;
         this.produto = new Produto(nome, preco, this);
     }
+
+    public double getTotal() {
+        return quatidade * produto.getPreco();
+    }
 }
